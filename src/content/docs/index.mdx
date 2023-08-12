@@ -1,11 +1,11 @@
 ---
-title: Welcome to Starlight
+title: Welcome to Thoth Tech!
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: One location for all Thoth Tech documentation!
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/ThothLogo.png
   actions:
     - text: Example Guide
       link: /guides/example/
@@ -14,23 +14,42 @@ hero:
     - text: Read the Starlight docs
       link: https://starlight.astro.build
       icon: external
+	-Text:
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, LinkCard, CardGrid } from "@astrojs/starlight/components";
 
-## Next steps
+## About Us:
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+<Card title="What we do">
+  Thoth tech creates tools that enhance education outcomes by empowering
+  students, connecting them with tutors and facilitating personalised learning
+  experiences. Values Our values describe how we work, what we represent, and
+  guide us to be the kind of company and team members we want to be. When we
+  live up to these values we will: Be people-focused We expect the best from
+  each other, give each other the benefit of the doubt, encourage each other to
+  take initiative to improve ourselves and the company, and provide direct and
+  constructive help to each other. We collaborate with kindness while being
+  respectful of each other. Uphold sustainable excellence We create working,
+  maintainable, and understandable software that is enjoyable and easy to use. 8
+  We strive to do it in a way that is sustainable for our team members and for
+  our environment. Be inclusive and supportive We celebrate diverse perspectives
+  and embrace uncomfortable ideas and conversations.
+</Card>
+
+<CardGrid>
+  <LinkCard
+    title="Customizing Starlight"
+    description="Learn how to make your Starlight site your own with custom styles, fonts, and more."
+    href="/guides/customization/"
+  />
+  <Card title="Add new content" icon="add-document">
+    Add Markdown or MDX files to `src/content/docs` to create new pages.
+  </Card>
+  <Card title="Configure your site" icon="setting">
+    Edit your `sidebar` and other config in `astro.config.mjs`.
+  </Card>
+  <Card title="Read the docs" icon="open-book">
+    Learn more in [the Starlight Docs](https://starlight.astro.build/).
+  </Card>
 </CardGrid>
