@@ -15,6 +15,12 @@ export default defineConfig({
 			},
 			sidebar: [
 				{
+					label: 'Home',
+					items: [
+						{ label: 'Products', link: '/home/products/'},
+					],
+				},
+				{
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
