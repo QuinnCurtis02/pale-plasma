@@ -6,6 +6,10 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Thoth Tech',
+			logo: {
+				dark: './src/assets/logo-dark-theme.png',
+				light: './src/assets/logo-light-theme.png'
+			},
 			social: {
 				github: 'https://github.com/thoth-tech',
 			},
