@@ -5,11 +5,21 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Thoth Tech',
+			logo: {
+				dark: './src/assets/logo-dark-theme.png',
+				light: './src/assets/logo-light-theme.png'
+			},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/thoth-tech',
 			},
 			sidebar: [
+				{
+					label: 'Home',
+					items: [
+						{ label: 'Products', link: '/home/products/'},
+					],
+				},
 				{
 					label: 'Guides',
 					items: [
